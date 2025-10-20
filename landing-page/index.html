@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuroloop Systems - Enterprise AI Automation</title>
+    <title>Neuroloop Systems - Marketing Autonomy System</title>
     <style>
         * {
             margin: 0;
@@ -142,19 +142,29 @@
             background-clip: text;
         }
 
+        .product-name {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 25px;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .product-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
         .hero p {
             font-size: 24px;
             color: rgba(255, 255, 255, 0.65);
             max-width: 800px;
-            margin: 0 auto 60px;
+            margin: 40px auto 60px;
             line-height: 1.7;
-            font-weight: 400;
-        }
-
-        .product-label {
-            font-size: 18px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-top: 20px;
             font-weight: 400;
         }
 
@@ -174,6 +184,7 @@
             transition: all 0.3s;
             border: none;
             cursor: pointer;
+            display: inline-block;
         }
 
         .btn-primary {
@@ -231,6 +242,123 @@
             color: rgba(255, 255, 255, 0.5);
             text-transform: uppercase;
             letter-spacing: 1.5px;
+        }
+
+        /* Limited Pilot Program Section */
+        .pilot-program {
+            padding: 120px 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+            border-radius: 40px;
+            margin: 80px 0;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .pilot-content {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .limited-badge {
+            display: inline-block;
+            padding: 10px 24px;
+            background: rgba(245, 87, 108, 0.15);
+            border: 1px solid rgba(245, 87, 108, 0.3);
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            color: #f5576c;
+        }
+
+        .pilot-title {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
+
+        .pilot-description {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        .pilot-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .pilot-stat {
+            text-align: center;
+        }
+
+        .pilot-stat-number {
+            font-size: 56px;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+
+        .pilot-stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pilot-features {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(30px);
+            border-radius: 24px;
+            padding: 40px;
+            margin: 50px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pilot-features h3 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .pilot-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: left;
+        }
+
+        .pilot-feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .pilot-feature-item:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .pilot-feature-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .pilot-footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
         }
 
         /* Section Titles */
@@ -588,10 +716,30 @@
             margin-bottom: 20px;
         }
 
+        .price-old {
+            font-size: 32px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.3);
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+
         .price {
             font-size: 72px;
             font-weight: 700;
-            margin: 25px 0;
+            margin: 15px 0;
+        }
+
+        .price-savings {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            color: #10b981;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 15px 0;
         }
 
         .price-label {
@@ -715,11 +863,24 @@
             .metrics-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .pilot-stats {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .pilot-features-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 48px;
+            }
+
+            .product-name {
+                font-size: 22px;
             }
 
             .hero p {
@@ -761,6 +922,14 @@
             .section-title {
                 font-size: 40px;
             }
+
+            .pilot-title {
+                font-size: 40px;
+            }
+
+            .pilot-description {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -775,6 +944,7 @@
         <nav>
             <div class="logo">Neuroloop Systems</div>
             <div class="nav-links">
+                <a href="#pilot">Pilot Program</a>
                 <a href="#test-results">Test Results</a>
                 <a href="#specs">Specifications</a>
                 <a href="#agents">Agents</a>
@@ -787,17 +957,18 @@
         <section class="hero">
             <div class="hero-tag">Neuroloop Systems</div>
             <h1>
-                Intelligent Automation<br>
-                <span class="gradient-text">That Never Stops</span>
+                Intelligent Marketing<br>
+                <span class="gradient-text">Runs Itself</span>
             </h1>
-            <p class="product-label">Presenting: <strong>NULL</strong> - Multi-Agent AI Automation Platform</p>
+            <div class="product-name">Marketing Autonomy System</div>
+            <div class="product-subtitle">Enterprise AI Automation Platform</div>
             <p>
-                A production-grade AI system with 14 specialized autonomous agents, 
-                100% test validation, and enterprise-ready infrastructure deployed in 2 weeks.
+                14 specialized AI agents working 24/7 to automate your marketing operations. 
+                100% validated, enterprise-ready, and deployed in 2 weeks.
             </p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Request Technical Demo</a>
-                <a href="#test-results" class="btn btn-secondary">View Test Data</a>
+                <a href="#pilot" class="btn btn-primary">Apply for Pilot Program</a>
+                <a href="#test-results" class="btn btn-secondary">View System Validation</a>
             </div>
 
             <!-- Stats Bar -->
@@ -815,15 +986,84 @@
                     <div class="stat-label">Test Duration</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Uptime</div>
+                    <div class="stat-number">2 weeks</div>
+                    <div class="stat-label">Deployment Time</div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Limited Pilot Program Section -->
+        <section class="pilot-program" id="pilot">
+            <div class="pilot-content">
+                <div class="limited-badge">
+                    🔥 Limited Availability - 5 Spots Only
+                </div>
+                
+                <h2 class="pilot-title">Pilot Program</h2>
+                
+                <p class="pilot-description">
+                    We're accepting <strong>5 enterprise marketing agencies</strong> for our November 2025 pilot deployment. 
+                    Founding clients receive priority implementation, exclusive 25% discount, and direct access to our development team.
+                </p>
+                
+                <div class="pilot-stats">
+                    <div class="pilot-stat">
+                        <div class="pilot-stat-number">2 weeks</div>
+                        <div class="pilot-stat-label">Deployment Time</div>
+                    </div>
+                    <div class="pilot-stat">
+                        <div class="pilot-stat-number">5 spots</div>
+                        <div class="pilot-stat-label">Available</div>
+                    </div>
+                    <div class="pilot-stat">
+                        <div class="pilot-stat-number">25% off</div>
+                        <div class="pilot-stat-label">Founding Discount</div>
+                    </div>
+                </div>
+
+                <div class="pilot-features">
+                    <h3>Pilot Program Includes:</h3>
+                    <div class="pilot-features-grid">
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>$11,250 setup</strong> (25% discount - save $3,750)</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>2-week deployment</strong> with dedicated implementation team</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>14 AI agents</strong> configured for your workflows</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>Priority feature requests</strong> during pilot period</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>Direct development team access</strong> for custom needs</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>First 3 months support included</strong> ($6,000 value)</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>Full system integration</strong> with existing tools & platforms</span>
+                        </div>
+                        <div class="pilot-feature-item">
+                            <span class="pilot-feature-text"><strong>Comprehensive team training</strong> and documentation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 50px;">
+                    <a href="#contact" class="btn btn-primary" style="padding: 22px 55px; font-size: 18px;">Apply for Pilot Program</a>
+                </div>
+                
+                <p class="pilot-footer">
+                    Applications reviewed within 24 hours · Priority given to agencies managing $10M+ annual revenue
+                </p>
             </div>
         </section>
 
         <!-- Test Results Section -->
         <section class="test-results" id="test-results">
-            <h2 class="section-title" style="text-align: center;">NULL Integration Test Results</h2>
+            <h2 class="section-title" style="text-align: center;">System Integration Validation</h2>
             <p class="section-subtitle" style="text-align: center;">
                 Complete validation of all system components with 100% success rate. 
                 All tests executed on October 16, 2025 at 20:20:18 UTC.
@@ -832,7 +1072,7 @@
             <div class="test-results-container">
                 <div class="test-header">
                     <div>
-                        <div class="test-title">NULL System Integration Tests</div>
+                        <div class="test-title">Marketing Autonomy System - Integration Tests</div>
                         <div class="test-date">Test Suite v1.0.0 | Executed: 2025-10-16 20:20:18</div>
                     </div>
                     <div style="text-align: right;">
@@ -932,9 +1172,9 @@
                 </div>
 
                 <div class="test-summary">
-                    <h3>🎉 NULL SYSTEM: PRODUCTION READY</h3>
+                    <h3>🎉 SYSTEM VALIDATION: PRODUCTION READY</h3>
                     <p style="color: rgba(255, 255, 255, 0.7); margin-top: 15px;">
-                        All integration tests passed with 100% success rate. System validated for production deployment.
+                        All integration tests passed with 100% success rate. System validated for enterprise production deployment.
                     </p>
                     <div class="test-summary-stats">
                         <div class="summary-stat">
@@ -1027,9 +1267,9 @@
 
         <!-- Agent Capabilities Matrix -->
         <section class="agent-matrix" id="agents">
-            <h2 class="section-title" style="text-align: center;">NULL Agent Capabilities Matrix</h2>
+            <h2 class="section-title" style="text-align: center;">Agent Capabilities Matrix</h2>
             <p class="section-subtitle" style="text-align: center;">
-                14 specialized AI agents powered by Claude 4, each designed for specific business functions 
+                14 specialized AI agents powered by Claude 4, each designed for specific marketing functions 
                 with autonomous decision-making capabilities.
             </p>
 
@@ -1274,32 +1514,36 @@
 
         <!-- Pricing Section -->
         <section class="pricing" id="pricing">
-            <h2 class="section-title">Investment & ROI</h2>
+            <h2 class="section-title">Pilot Program Investment</h2>
             <p class="section-subtitle">
-                Enterprise-grade AI automation at a fraction of the cost of building in-house 
-                or hiring additional staff.
+                Exclusive founding client pricing for our November 2025 pilot program. 
+                Limited to 5 enterprise marketing agencies. Save $3,750 with early adoption.
             </p>
 
             <div class="pricing-cards">
-                <div class="pricing-card">
-                    <div class="pricing-tag">Implementation</div>
-                    <div class="price">$15,000</div>
-                    <div class="price-label">One-time investment</div>
+                <div class="pricing-card featured">
+                    <div class="pricing-tag">Pilot Program Special</div>
+                    <div class="price-old">$15,000</div>
+                    <div class="price">$11,250</div>
+                    <div class="price-savings">💰 Save $3,750 (25% off)</div>
+                    <div class="price-label">One-time implementation fee</div>
                     <ul class="price-features">
                         <li>Complete system deployment (2 weeks)</li>
-                        <li>All 14 agents configured for your workflows</li>
+                        <li>All 14 AI agents configured for your workflows</li>
                         <li>Full API integration with existing tools</li>
                         <li>Custom workflow development</li>
                         <li>Comprehensive team training</li>
-                        <li>2 weeks hands-on support</li>
+                        <li>Priority feature requests</li>
+                        <li>Direct access to development team</li>
+                        <li>First 3 months support included ($6,000 value)</li>
                         <li>Complete documentation package</li>
                     </ul>
                 </div>
 
-                <div class="pricing-card featured">
+                <div class="pricing-card">
                     <div class="pricing-tag">Ongoing Support</div>
                     <div class="price">$2,000</div>
-                    <div class="price-label">Monthly retainer</div>
+                    <div class="price-label">Monthly retainer (after 3 months)</div>
                     <ul class="price-features">
                         <li>24/7 system monitoring and maintenance</li>
                         <li>Continuous updates and improvements</li>
@@ -1313,12 +1557,12 @@
             </div>
 
             <div style="margin-top: 80px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(30px); border-radius: 30px; padding: 50px; border: 1px solid rgba(255, 255, 255, 0.1);">
-                <h3 style="font-size: 28px; margin-bottom: 30px;">ROI Analysis</h3>
+                <h3 style="font-size: 28px; margin-bottom: 30px;">ROI Analysis (Year 1)</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center;">
                     <div>
-                        <div style="font-size: 18px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px;">NULL Total Year 1</div>
-                        <div style="font-size: 42px; font-weight: 700; color: #10b981;">$39,000</div>
-                        <div style="font-size: 14px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">Setup + 12 months support</div>
+                        <div style="font-size: 18px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px;">Marketing Autonomy System</div>
+                        <div style="font-size: 42px; font-weight: 700; color: #10b981;">$29,250</div>
+                        <div style="font-size: 14px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">Setup + 9 months support</div>
                     </div>
                     <div>
                         <div style="font-size: 18px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px;">AI Engineer Salary</div>
@@ -1326,24 +1570,24 @@
                         <div style="font-size: 14px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">Average annual cost + benefits</div>
                     </div>
                     <div>
-                        <div style="font-size: 18px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px;">Savings</div>
-                        <div style="font-size: 42px; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$81,000</div>
-                        <div style="font-size: 14px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">First year cost avoidance</div>
+                        <div style="font-size: 18px; color: rgba(255, 255, 255, 0.6); margin-bottom: 10px;">First Year Savings</div>
+                        <div style="font-size: 42px; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$90,750</div>
+                        <div style="font-size: 14px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">Cost avoidance vs. hiring</div>
                     </div>
                 </div>
                 <p style="margin-top: 40px; color: rgba(255, 255, 255, 0.6); font-size: 15px; line-height: 1.7;">
                     <strong>Time to Value:</strong> 2 weeks deployment vs. 6+ months to build in-house or 3+ months to hire and onboard an engineer. 
-                    NULL delivers immediate ROI through automation of 20+ hours per week of manual work.
+                    Marketing Autonomy System delivers immediate ROI through automation of 20+ hours per week of manual marketing work.
                 </p>
             </div>
         </section>
 
         <!-- Contact Form -->
         <section class="contact" id="contact">
-            <h2 class="section-title">Request Technical Demonstration</h2>
+            <h2 class="section-title">Apply for Pilot Program</h2>
             <p class="section-subtitle">
-                Schedule a comprehensive 30-minute demo to see NULL operating in real-time 
-                and discuss your specific automation requirements.
+                Submit your application for the Marketing Autonomy System Pilot Program. We'll review and respond within 24 hours.
+                Priority given to agencies managing $10M+ annual revenue.
             </p>
 
             <div class="contact-form">
@@ -1370,7 +1614,7 @@
                             <option value="ceo">CEO / Founder</option>
                             <option value="cto">CTO / Technology Lead</option>
                             <option value="operations">Operations Manager</option>
-                            <option value="product">Product Manager</option>
+                            <option value="cmo">CMO / Marketing Director</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -1388,62 +1632,71 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="revenue">Annual Revenue Range *</label>
+                        <select id="revenue" name="revenue" required>
+                            <option value="">Select revenue range...</option>
+                            <option value="<1M">Less than $1M</option>
+                            <option value="1M-5M">$1M - $5M</option>
+                            <option value="5M-10M">$5M - $10M</option>
+                            <option value="10M-50M">$10M - $50M</option>
+                            <option value="50M+">$50M+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
                         <label for="use-case">Primary Use Case *</label>
                         <select id="use-case" name="use-case" required>
                             <option value="">Select primary use case...</option>
-                            <option value="operations">Operations Automation</option>
-                            <option value="content">Content Generation</option>
-                            <option value="analytics">Data Analysis & Reporting</option>
-                            <option value="customer-service">Customer Service</option>
-                            <option value="marketing">Marketing Automation</option>
-                            <option value="research">Research & Intelligence</option>
+                            <option value="operations">Marketing Operations Automation</option>
+                            <option value="content">Content Generation & Distribution</option>
+                            <option value="analytics">Campaign Analysis & Reporting</option>
+                            <option value="customer-service">Customer Service Automation</option>
+                            <option value="lead-gen">Lead Generation & Nurturing</option>
+                            <option value="research">Market Research & Intelligence</option>
                             <option value="multiple">Multiple Use Cases</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Describe Your Automation Needs *</label>
-                        <textarea id="message" name="message" required placeholder="What specific workflows or processes would you like to automate? What challenges are you currently facing with manual operations?"></textarea>
+                        <label for="message">Why are you a good fit for the pilot program? *</label>
+                        <textarea id="message" name="message" required placeholder="Describe your marketing automation needs, current challenges with manual work, and how you would use the Marketing Autonomy System to improve your operations..."></textarea>
                     </div>
-
-                    <div class="form-group">
-                        <label for="timeline">Implementation Timeline *</label>
+<div class="form-group">
+                        <label for="timeline">Preferred Start Date *</label>
                         <select id="timeline" name="timeline" required>
-                            <option value="">When do you want to deploy?</option>
+                            <option value="">When can you start?</option>
                             <option value="immediate">Immediately (within 2 weeks)</option>
-                            <option value="1-month">Within 1 month</option>
-                            <option value="1-3-months">1-3 months</option>
-                            <option value="3-6-months">3-6 months</option>
-                            <option value="exploring">Currently exploring options</option>
+                            <option value="november">November 2025</option>
+                            <option value="december">December 2025</option>
+                            <option value="flexible">Flexible</option>
                         </select>
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
-                        Schedule Technical Demo
+                        Submit Pilot Application
                     </button>
 
                     <p style="margin-top: 30px; font-size: 13px; color: rgba(255, 255, 255, 0.5); text-align: center;">
-                        By submitting this form, you agree to be contacted regarding NULL system deployment. 
-                        We typically respond within 24 hours.
+                        By submitting this application, you agree to be contacted regarding pilot program participation. 
+                        Applications are reviewed within 24 hours.
                     </p>
                 </form>
             </div>
 
             <p style="margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 15px;">
-                <strong>Limited Availability:</strong> Currently accepting 3 new enterprise clients this month. 
-                Priority given to businesses with immediate deployment timelines.
+                <strong>Questions?</strong> Email us directly at william@neuroloop.systems for immediate assistance.
             </p>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p style="font-size: 18px; font-weight: 600; color: rgba(255, 255, 255, 0.8);"><strong>Neuroloop Systems</strong> - Intelligent Automation That Never Stops</p>
-            <p style="margin-top: 15px;">Presenting NULL - Enterprise AI Automation Platform</p>
+            <p style="font-size: 18px; font-weight: 600; color: rgba(255, 255, 255, 0.8);"><strong>Neuroloop Systems</strong> - Intelligent Marketing Automation</p>
+            <p style="margin-top: 15px;">Marketing Autonomy System - Enterprise AI Platform</p>
             <div class="footer-links" style="margin: 30px 0;">
                 <a href="mailto:william@neuroloop.systems">Email</a>
                 <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
                 <a href="https://github.com/f01n8deX">GitHub</a>
-                <a href="#test-results">Test Results</a>
+                <a href="#test-results">System Validation</a>
                 <a href="#specs">Documentation</a>
             </div>
             <p style="margin-top: 30px; font-size: 12px;">© 2025 Neuroloop Systems. All rights reserved. | Powered by Claude 4 AI</p>
